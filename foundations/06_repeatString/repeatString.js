@@ -1,5 +1,5 @@
 const repeatString = function(string, count) {
-    if (count < 1) {
+    if (count < 0) {
         return "ERROR";
     }
     let newWord = "";
@@ -8,7 +8,7 @@ const repeatString = function(string, count) {
     }
     return newWord
 };
-console.log(repeatString("HI" , 3))
+repeatString("HI" , 3)
 
 // Do not edit below this line
 module.exports = repeatString;
